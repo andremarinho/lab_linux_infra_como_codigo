@@ -14,27 +14,27 @@ echo "End create groups..."
 echo "Creating groups..."
 
 echo "create group GRP_ADM"
-#groupadd GRP_ADM
+groupadd GRP_ADM
 
 echo "create group GRP_VEN"
-#groupadd GRP_VEN
+groupadd GRP_VEN
 
 echo "create group GRP_SEC"
-#groupadd GRP_SEC
+groupadd GRP_SEC
 
 echo "End create groups... "
 
 echo "Creating users..."
 
-#adduser carlos
-#adduser maria
-#adduser joao
-#adduser debora
-#adduser sebastiao
-#adduser roberto
-#adduser josefina
-#adduser amanda
-#adduser rogerio
+adduser carlos
+adduser maria
+adduser joao
+adduser debora
+adduser sebastiao
+adduser roberto
+adduser josefina
+adduser amanda
+adduser rogerio
 
 echo "End to create users"
 
