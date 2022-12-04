@@ -1,0 +1,55 @@
+echo "Create structure folders..."
+
+mkdir /public
+mkdir /adm
+mkdir /ven
+mkdir /sec
+
+echo "end create structure folders!"
+
+echo "************************************************"
+
+echo "End create groups..."
+
+echo "Creating groups..."
+
+echo "create group GRP_ADM"
+groupadd GRP_ADM
+
+echo "create group GRP_VEN"
+groupadd GRP_VEN
+
+echo "create group GRP_SEC"
+groupadd GRP_SEC
+
+echo "End create groups... "
+
+echo "Creating users..."
+
+adduser carlos -G GRP_ADM -p senha123
+adduser maria -G GRP_ADM -p senha123
+adduser joao -G GRP_ADM -p senha123
+adduser debora -G GRP_VENDAS -p senha123
+adduser sebastiao -G GRP_VENDAS -p senha123
+adduser roberto -G GRP_VENDAS -p senha123
+adduser josefina -G GRP_SEC -p senha123
+adduser amanda -G GRP_SEC -p senha123
+adduser rogerio -G GRP_SEC -p senha123
+
+echo "Adding permissions folders..."
+
+chmod 777 /publico
+chmod 770 /adm
+chmod 770 /ven
+chmod 770 /sec
+
+echo "End permissions folders"
+
+echo "*****************************************"
+
+echo "Adding folders to group..."
+
+chown GRP_ADM /adm
+chown GRP_VEN /ven
+chown GRP_SEC /sec
+
