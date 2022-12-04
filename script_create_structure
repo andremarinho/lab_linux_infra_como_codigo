@@ -26,15 +26,15 @@ echo "End create groups... "
 
 echo "Creating users..."
 
-adduser carlos -p senha123
-adduser maria -p senha123
-adduser joao -p senha123
-adduser debora -p senha123
-adduser sebastiao -p senha123
-adduser roberto -p senha123
-adduser josefina -p senha123
-adduser amanda -p senha123
-adduser rogerio -p senha123
+adduser carlos
+adduser maria
+adduser joao
+adduser debora
+adduser sebastiao
+adduser roberto
+adduser josefina
+adduser amanda
+adduser rogerio
 
 echo "End to create users"
 
