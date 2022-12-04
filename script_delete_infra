@@ -1,0 +1,7 @@
+echo "Deleting folders..."
+rm -r /adm
+rm -r /public
+rm -r /ven
+rm -r /sec
+
+echo "End deleting folders."
