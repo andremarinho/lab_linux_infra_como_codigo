@@ -26,15 +26,15 @@ echo "End create groups... "
 
 echo "Creating users..."
 
-adduser carlos
-adduser maria
-adduser joao
-adduser debora
-adduser sebastiao
-adduser roberto
-adduser josefina
-adduser amanda
-adduser rogerio
+#adduser carlos
+#adduser maria
+#adduser joao
+#adduser debora
+#adduser sebastiao
+#adduser roberto
+#adduser josefina
+#adduser amanda
+#adduser rogerio
 
 echo "End to create users"
 
@@ -65,7 +65,7 @@ echo "*****************************************"
 
 echo "Adding folders to group..."
 
-chown GRP_ADM /adm
-chown GRP_VEN /ven
-chown GRP_SEC /sec
+chgrp GRP_ADM /adm
+chgrp GRP_VEN /ven
+chgrp GRP_SEC /sec
 
