@@ -14,27 +14,43 @@ echo "End create groups..."
 echo "Creating groups..."
 
 echo "create group GRP_ADM"
-groupadd GRP_ADM
+#groupadd GRP_ADM
 
 echo "create group GRP_VEN"
-groupadd GRP_VEN
+#groupadd GRP_VEN
 
 echo "create group GRP_SEC"
-groupadd GRP_SEC
+#groupadd GRP_SEC
 
 echo "End create groups... "
 
 echo "Creating users..."
 
-adduser carlos -G GRP_ADM -p senha123
-adduser maria -G GRP_ADM -p senha123
-adduser joao -G GRP_ADM -p senha123
-adduser debora -G GRP_VENDAS -p senha123
-adduser sebastiao -G GRP_VENDAS -p senha123
-adduser roberto -G GRP_VENDAS -p senha123
-adduser josefina -G GRP_SEC -p senha123
-adduser amanda -G GRP_SEC -p senha123
-adduser rogerio -G GRP_SEC -p senha123
+adduser carlos -p senha123
+adduser maria -p senha123
+adduser joao -p senha123
+adduser debora -p senha123
+adduser sebastiao -p senha123
+adduser roberto -p senha123
+adduser josefina -p senha123
+adduser amanda -p senha123
+adduser rogerio -p senha123
+
+echo "End to create users"
+
+echo "Adding user to group..."
+
+usermod -a -G GRP_ADM carlos
+usermod -a -G GRP_ADM maria
+usermod -a -G GRP_ADM joao
+usermod -a -G GRP_VEN debora
+usermod -a -G GRP_VEN sebastiao
+usermod -a -G GRP_VEN roberto
+usermod -a -G GRP_SEC josefina
+usermod -a -G GRP_SEC amanda
+usermod -a -G GRP_SEC rogerio
+
+echo "End user to group..."
 
 echo "Adding permissions folders..."
 
